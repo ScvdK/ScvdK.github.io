@@ -2,3 +2,34 @@
     margin:0px;
     padding:0px;
 }
+
+body {
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  background:black;
+  padding: 10px;
+}
+
+ul li {
+  background: black;
+  padding: 5px;
+  border: solid 2px white;
+  display: inline-block;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: cyan;
+}
