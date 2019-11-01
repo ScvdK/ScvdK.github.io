@@ -5,15 +5,45 @@
 
 body {
 font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+color: white;
 }
 
-footer {
+#header { grid-area: header; }
+#nav { grid-area: nav; }
+.section { grid-area: main; }
+#footer { grid-area: footer; }
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'nav nav nav nav nav nav'
+  'main main main main main main'
+  'footer footer footer footer footer footer' ;
+
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.wrapper > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+.section {
+  background-color: black;
+}
+
+#footer{
   background-color: black;
   color: white;
   text-decoration: none;
 }
 
-ul {
+ul.nav {
   background:black;
   padding: 10px;
 }
@@ -23,6 +53,10 @@ ul li {
   padding: 5px;
   border: solid 2px white;
   display: inline-block;
+}
+
+ul li:hover {
+  border: solid 2px cyan;
 }
 
 ul li a {
