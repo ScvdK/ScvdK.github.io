@@ -32,6 +32,12 @@ color: white;
   font-size: 30px;
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 
 .section {
   background-color: black;
@@ -41,6 +47,11 @@ color: white;
   background-color: black;
   color: white;
   text-decoration: none;
+  font-size: 80%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 ul.nav {
@@ -48,22 +59,27 @@ ul.nav {
   padding: 10px;
 }
 
-ul li {
+ul li.nav {
   background: black;
   padding: 5px;
   border: solid 2px white;
   display: inline-block;
 }
 
-ul li:hover {
+ul li:hover.nav {
   border: solid 2px cyan;
 }
 
-ul li a {
+ul a {
   color: white;
   text-decoration: none;
 }
 
-ul li a:hover {
+ul a:hover {
   color: cyan;
+}
+
+ul li.contact {
+  display: block;
+  text-align: left;
 }
