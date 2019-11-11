@@ -4,23 +4,26 @@
     <meta charset="utf-8">
     <title>website eindopdracht</title>
     <link rel="stylesheet" href="C:\Users\hans1\Desktop\School\Informatica\Eindopdracht\CSS\opmaak.css">
+  <!-- icon library voor topnav -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="wrapper">
 
-    <div id="header">
-      plaatje + logo
-    </div>
+      <div id="header">
+        <img class="headerpng" src="C:\Users\hans1\Desktop\School\Informatica\Eindopdracht\img\headerlogo.png" alt="yeet">
+        <p class="headertext">YEET</p>
+      </div>
 
-    <div id="nav">
-      <ul class="nav">
-        <li class="nav"><a class="nav" href="Home.html">Home</a></li>
-        <li class="nav"><a class="nav" href="Sam.html">Over Mij</a></li>
-        <li class="nav"><a class="nav" href="School.html">School</a></li>
-        <li class="nav"><a class="nav" href="Familie.html">Familie</a></li>
-      </ul>
+  <div class="topnav" id="myTopnav">
+      <a href="Home.html">Home</a>
+      <a  href="Sam.html">Over Mij</a>
+      <a href="School.html">School</a>
+      <a class="active" href="Familie.html">Familie</a>
+      <a href="javascript:void(0);" class="icon" onclick="navexpand()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-
     <div class="section">
       inhoud
     </div>
@@ -37,7 +40,7 @@
     </div>
 
 
-
+      <script src="C:\Users\hans1\Desktop\School\Informatica\Eindopdracht\Javascript\Scripts.js"></script>
     </div>  <!-- einde wrapper -->
   </body>
 </html>
