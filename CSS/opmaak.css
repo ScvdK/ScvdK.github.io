@@ -8,7 +8,7 @@ font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 color: white;
 background-image: url(https://backgrounddownload.com/wp-content/uploads/2018/09/background-images-for-website-2.jpg);
 background-size: auto 100%;
-background-repeat: no-repeat;
+background-repeat: repeat-x;
 }
 
 
@@ -34,10 +34,6 @@ background-repeat: no-repeat;
   font-size: 30px;
 }
 
-div {
-  margin: 0;
-  padding: 0;
-}
 
 #header {
   background-color: black;
@@ -72,7 +68,7 @@ div.section {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
 }
 
 .contact {
@@ -85,6 +81,111 @@ div.section {
   text-decoration: none;
 }
 
+.responsive {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+}
+
+.gnome{
+  vertical-align: text-top;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+table, td, th {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.bk {
+  background-color: #ffff99
+}
+
+.bk2 {
+  background-color: #ff0000
+}
+
+.familiefoto {
+  padding: 5px;
+  max-width: 120px;
+  max-height: auto;
+}
+
+.tableimg {
+  padding: 5px;
+  max-width: 50px;
+  max-height: auto;
+}
+
+ul, ol {
+  font-variant: small-caps;
+}
+
+ol {
+  list-style: inside decimal;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: inside square;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:3vw;
+  font-weight:bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+iframe.responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  height: 600px;
+}
 /* navigatiebalk begin */
 
 .topnav {
