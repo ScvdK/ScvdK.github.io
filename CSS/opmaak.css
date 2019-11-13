@@ -39,6 +39,7 @@ background-repeat: repeat-x;
   background-color: black;
   width: 100%;
   padding: 20px 0px 20px 0px;
+  z-index: 2;
 }
 
 .headerpng {
@@ -193,6 +194,7 @@ iframe.responsive {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  z-index: 1;
 }
 
 .topnav {
@@ -225,14 +227,20 @@ iframe.responsive {
   display: none;
 }
 
-.sticky {
+.topnav.sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.sticky + .content {
-  padding-top: 60px;
+.topnav.sticky.responsive {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .section {
+  padding-top: 70px;
 }
 
 /* wanneer het scherm minder dan 600 pixels wijd is, alle links hidden, behalve de eerste (home).
@@ -246,7 +254,7 @@ Show de link met het topnav menu */
 }
 
 /* als de gebruiker op het icoon klikt wordt de "responsive" class toegevoegd met javascript
-dit laat het menuer goed uitzien op kleine schermen. */
+dit laat het menu er goed uitzien op kleine schermen. */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -260,5 +268,6 @@ dit laat het menuer goed uitzien op kleine schermen. */
     text-align: left;
   }
 }
+
 
 /* navigatiebalk eind*/

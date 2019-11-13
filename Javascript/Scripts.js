@@ -2,10 +2,18 @@
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
-    } else {
-      x.className = "topnav";
+    }
+   else if (x.className === "topnav sticky") {
+      x.className += " responsive"
+    }
+  else if (x.className === "topnav responsive") {
+    x.className = "topnav"
+  }
+     else {
+      x.className = "topnav sticky";
     }
   }
+
 
 
   window.onscroll = function() {Stickynav()};
