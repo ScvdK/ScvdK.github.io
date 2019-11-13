@@ -118,13 +118,13 @@ table, td, th {
 .familiefoto {
   padding: 5px;
   max-width: 120px;
-  max-height: auto;
+  height: auto;
 }
 
 .tableimg {
   padding: 5px;
   max-width: 50px;
-  max-height: auto;
+  height: auto;
 }
 
 ul, ol {
