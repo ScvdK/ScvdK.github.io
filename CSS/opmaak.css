@@ -99,6 +99,10 @@ div.section {
   height: auto;
 }
 
+p {
+  padding: 5px;
+}
+
 table, td, th {
   margin-left: auto;
   margin-right: auto;
@@ -146,6 +150,7 @@ a {
   color: #fff
 }
 
+/* voor de mail knop. hover om het effect te zien */
 .rainbow-button {
   width:calc(20vw + 6px);
   height:calc(8vw + 6px);
@@ -179,6 +184,7 @@ a {
     background-position:20vw;
   }
 }
+
 
 iframe.responsive {
   display: block;
