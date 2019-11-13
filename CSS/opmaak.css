@@ -132,11 +132,11 @@ ul, ol {
 }
 
 ol {
-  list-style: inside decimal;
+  list-style: inside none;
   padding-bottom: 10px;
 }
 
-ul {
+.nummer {
   list-style: inside square;
   padding-bottom: 10px;
 }
